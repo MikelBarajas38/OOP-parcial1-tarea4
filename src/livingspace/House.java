@@ -18,13 +18,22 @@ public class House {
     private BedRoom[] bedRooms = new BedRoom[MAX_BED_ROOMS];
     private int bedRoomIndex = 0;
 
-
-    public void addRoom(BedRoom bedRoom){
-
+    public boolean addRoom(BedRoom bedRoom) {
+        if(bedRoomIndex < MAX_BED_ROOMS){
+            bedRooms[bedRoomIndex] = bedRoom;
+            bedRoomIndex++;
+            return true;
+        }
+        return false;
     }
 
-    public void addRoom(RestRoom restRoom){
-
+    public boolean addRoom(RestRoom restRoom) {
+        if(restRoomIndex < MAX_REST_ROOMS){
+            restRooms[restRoomIndex] = restRoom;
+            restRoomIndex++;
+            return true;
+        }
+        return false;
     }
 
     public Kitchen getKitchen() {
