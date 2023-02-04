@@ -64,16 +64,8 @@ public class House {
         return restRooms;
     }
 
-    public void setRestRooms(RestRoom[] restRooms) {
-        this.restRooms = restRooms;
-    }
-
     public BedRoom[] getBedRooms() {
         return bedRooms;
-    }
-
-    public void setBedRooms(BedRoom[] bedRooms) {
-        this.bedRooms = bedRooms;
     }
 
     public Yard getYard() {
